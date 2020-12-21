@@ -1,0 +1,137 @@
+<!-- <!DOCTYPE html>
+<html>
+
+<head>
+    <title>Users</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+
+<body>
+    <h5>Users List</h5>
+    <h5><a href="/register">Create New User</a></h5>
+    <table>
+        <thead>
+            <tr>
+                <td>#</td>
+                <td>Full Name</td>
+                <td>Email</td>
+                <td>Profile</td>
+                <td>Contact 1</td>
+                <td>Contact 2</td>
+            </tr>
+        </thead>
+        <tbody>
+            <%for(let index in users){%>
+                <tr>
+                    <td>
+                        <%- index + 1%>
+                    </td>
+                    <td>
+                        <%- users[index].fullName%>
+                    </td>
+                    <td>
+                        <%- users[index].email%>
+                    </td>
+                    <td>
+                        <%- users[index].Profile%>
+                    </td>
+                    <td>
+                        <%- users[index].contact_1%>
+                    </td>
+                    <td>
+                        <%- users[index].contact_2%>
+                    </td>
+                    <td>
+                        <a href="/edit/<%- users[index]._id%>">Edit</a>
+                        <a href="/delete/<%- users[index]._id%>">Delete</a>
+                    </td>
+                </tr>
+                <%}%>
+        </tbody>
+    </table>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Enter your description here" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css">
+    <title>
+        table
+    </title>
+</head>
+
+<body>
+    <div>
+        <a href="/register" class="d-grid d-md-flex justify-content-md-end col-md-9 mt-5 container" role="button">ADD ANOTHER</a>
+        <table class="table table-bordered table-success container mt-5 col-md-9">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Full Name</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">Profile</th>
+                    <th scope="col">Contact 1</th>
+                    <th colspan="0">Contact 2</th>
+                    <th colspan="2">Edit||Delete</th>
+
+                </tr>
+            </thead>
+            <tbody>
+                <%for(let index in users){%>
+
+                    <tr>
+                        <td>
+                            <%- parseInt(index)+1%>
+                        </td>
+
+                        <td>
+                            <%- users[index].fullName%>
+
+                        </td>
+
+
+
+                        <td>
+                            <%- users[index].email%>
+                        </td>
+
+
+                        <td>
+                            <%- users[index].Profile%>
+                        </td>
+
+
+                        <td>
+                            <%- users[index].contact_1%>
+                        </td>
+
+
+                        <td>
+                            <%- users[index].contact_2%>
+                        </td>
+
+                        <td>
+                            
+                            <a href="/edit/<%- users[index]._id%>" class="btn btn-info" role="button">Edit</a>
+                        </td>
+                        <td>
+                            <a href="/delete/<%- users[index]._id%>" class="btn btn-danger" role="button">Delete</a>
+                        </td>
+                    </tr>
+                    <%}%>
+            </tbody>
+        </table>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

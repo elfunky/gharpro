@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Enter your description here" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Title</title>
+    <style>
+        body {
+            background-color: #525252;
+        }
+        
+        .centered-form {
+            margin-top: 60px;
+            margin-left: 15%;
+        }
+        
+        .centered-form .panel {
+            background: rgba(255, 255, 255, 0.8);
+            box-shadow: rgba(0, 0, 0, 0.3) 20px 20px 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row centered-form">
+            <div class="col-md-9 ml-5">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Please sign up for Bootsnipp <small>It's free!</small></h3>
+                    </div>
+                    <div class="panel-body">
+                        <form role="form" method="POST" action="/register" class="container">
+                            <div class="row">
+                                <div class="col-xs-6 col-sm-6 col-md-6">
+                                    <div class="form-group">
+                                        <label>fullName</label>
+                                        <input type="text" name="fullName" id="fullname" class="form-control input-sm" placeholder="fullName">
+                                    </div>
+                                </div>
+                                <div class="col-xs-6 col-sm-6 col-md-6">
+                                    <div class="form-group">
+                                        <label>email</label>
+                                        <input type="email" name="email" id="email1" class="form-control input-sm" placeholder="email">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label>Profile Details</label>
+                                <input type="text" name="Profile" id="pro" class="form-control input-sm" placeholder="Profile details">
+                            </div>
+
+                            <div class="row">
+                                <div class="col-xs-6 col-sm-6 col-md-6">
+                                    <div class="form-group">
+                                        <label>contact 1</label>
+                                        <input type="number" name="contact_1" id="con" class="form-control input-sm" placeholder="contact 1">
+                                    </div>
+                                </div>
+                                <div class="col-xs-6 col-sm-6 col-md-6">
+                                    <label>contact 2</label>
+                                    <div class="form-group">
+                                        <input type="number" name="contact_2" id="con2" class="form-control input-sm" placeholder="Contact 2">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <input type="submit" value="submit" class="btn btn-info btn-block">
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

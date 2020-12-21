@@ -1,0 +1,37 @@
+<!Doctype HTML>
+<html>
+
+<head>
+    <title>Register User</title>
+</head>
+
+<body>
+    <table>
+    <form method="POST" action="/edit">
+        <div>
+            <label>Full Name</label>
+            <input type="text" name="fullName" id="fullname" value="<%-user.fullName%>">
+            <input type="hidden" name="_id" id="_id" value="<%-user._id%>">
+        </div>
+        <div>
+            <label>Email</label>
+            <input type="text" name="email" id="email1" value="<%-user.email%>">
+        </div>
+        <div>
+            <label>Profile</label>
+            <input type="text" name="Profile" id="pro" value="<%-user.Profile%>">
+        </div>
+        <div>
+            <label>Contact 1</label>
+            <input type="number" name="contact_1" id="con" value="<%-user.contact_1%>">
+        </div>
+        <div>
+            <label>Contact 2</label>
+            <input type="number" name="contact_2" id="con2" value="<%-user.contact_2%>">
+        </div>
+        <input type="submit" value="Submit">
+    </form>
+</table>
+</body>
+
+</html>
